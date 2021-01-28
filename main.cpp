@@ -50,8 +50,13 @@ int main()
   }
 
   // Outputs example and rule for search
+  cout << '\n';
+  cout << "Instructions: " << '\n';
+  cout << "Use _ as spaces when looking up games" << '\n';
+  cout << "Make sure to use capital letters where they are needed" << '\n';
   cout << "EXAMPLE: Hyrule_Warriors_Age_of_Calamity" << '\n';
-  cout << "Type END to stop program" << "\n\n";
+  cout << "At the end of search type NEW or new for a new search" << '\n';
+  cout << "If you want to stop the program just type END to stop program" << "\n\n";
 
   // Enter the name for program to find and display information
   cout << "What game would you like? ";
