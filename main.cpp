@@ -35,7 +35,6 @@ int main()
   // Variable Declarations
   int numGames;
   string nameGame;
-  string END;
   
   read >> numGames;
 
@@ -49,12 +48,13 @@ int main()
   }
 
   cout << "What game are you looking for? " << '\n';
+  cout << "Type END to stop program" << '\n';
   
   int index = 0;
 
   cin >> nameGame;
 
-  while (nameGame != END)
+  while (nameGame != "END")
   {
     // loop to find game and display information
     for (int i = 0; i < numGames; i++)
@@ -71,14 +71,14 @@ int main()
              << " " << library[index].Year;
         
         // Makes spaces for multiple searches
-        int NEXT;
-        cout << '\n' << "Type NEXT to move on" << '\n';
-        cin >> NEXT;
-        cout << string(300, '\n');
+        cout << string(10, '\n');
+        cout << "\nWhat game are you looking for?\n";
+        cout << "Type END to stop program" << '\n';
         cin >> nameGame;
       }
     }
   }
+  cout << "Thank you";
 
   read.close();
   return(0);
