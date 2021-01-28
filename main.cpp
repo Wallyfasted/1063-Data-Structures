@@ -67,10 +67,10 @@ int main()
         index = i;
 
         // Outputs information
-        cout << "Title: " << right << setw(17) << library[index].Title 
-             << "\nPrice: " << right << setw(15) <<library[index].Price 
-             << "\nRating:  " << right << setw(13) <<library[index].Rating 
-             << "\nRelease Date:  " << right << setw(5) <<library[index].Year;
+        cout << left << setw(18) <<  "Title: " << right << setw(17) << library[index].Title 
+             << left << setw(18) <<"\nPrice: " << right << setw(7) <<library[index].Price 
+             << left << setw(18) <<"\nRating:  " << right << setw(7) <<library[index].Rating 
+             << left << setw(18) <<"\nRelease Date:  " << right << setw(5) <<library[index].Year;
         
         // Makes spaces for multiple searches
         string NEW;
