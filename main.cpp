@@ -35,7 +35,9 @@ int main()
   // Variable Declarations
   int numGames;
   string nameGame;
+  int index = 0;
   
+  // Reads number of games in input file
   read >> numGames;
 
   // Reads entire input file
@@ -47,11 +49,11 @@ int main()
         read >> library[i].Year;
   }
 
+  // Outputs question for search
   cout << "What game are you looking for? " << '\n';
   cout << "Type END to stop program" << '\n';
-  
-  int index = 0;
 
+  // Enter the name for program to find and display information
   cin >> nameGame;
 
   while (nameGame != "END")
@@ -59,27 +61,33 @@ int main()
     // loop to find game and display information
     for (int i = 0; i < numGames; i++)
     {
-
+      // if statement for displaying games
       if(library[i].Title == nameGame)
       {
         index = i;
 
         // Outputs information
-        cout << library[index].Title 
-             << " " << library[index].Price 
-             << " " << library[index].Rating 
-             << " " << library[index].Year;
+        cout << "Title: " << right << setw(17) << library[index].Title 
+             << "\nPrice: " << right << setw(15) <<library[index].Price 
+             << "\nRating:  " << right << setw(13) <<library[index].Rating 
+             << "\nRelease Date:  " << right << setw(5) <<library[index].Year;
         
         // Makes spaces for multiple searches
-        cout << string(10, '\n');
+        string NEW;
+        cout << "\n\nType NEW for the new search\n";
+        cin >> NEW;
+        cout << string(50, '\n');
+        // Repeats question for new search
         cout << "\nWhat game are you looking for?\n";
         cout << "Type END to stop program" << '\n';
         cin >> nameGame;
       }
     }
   }
-  cout << "Thank you";
+  // Program ending statement
+  cout << "Thank you, have a nice day :)";
 
+  // closes input file and returns
   read.close();
   return(0);
 }
