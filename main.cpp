@@ -56,6 +56,7 @@ int main()
   // Enter the name for program to find and display information
   cin >> nameGame;
 
+  // Sentinel loop where you type END to stop program 
   while (nameGame != "END")
   {
     // loop to find game and display information
@@ -74,11 +75,11 @@ int main()
         
         // Makes spaces for multiple searches
         string NEW;
-        cout << "\n\nType NEW for the new search\n";
+        cout << "\n\n" << "Type NEW for the new search" << '\n';
         cin >> NEW;
-        cout << string(50, '\n');
+        cout << string(75, '\n');
         // Repeats question for new search
-        cout << "\nWhat game are you looking for?\n";
+        cout << "\n" << "What game are you looking for?" << '\n';
         cout << "Type END to stop program" << '\n';
         cin >> nameGame;
       }
