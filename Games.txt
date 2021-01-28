@@ -1,4 +1,4 @@
-30
+40
 
 Fortnite $00.00 9.6/10 2017
 Hyrule_Warriors_Age_of_Calamity $59.99 9.0/10 2020
@@ -24,9 +24,19 @@ Tetris_99 $29.99 8.5/10 2019
 Stardew_Valley $34.99 10/10 2016
 Mortal_Kombat_11 $19.99 9.0/10 2019
 Splatoon_2 $59.99 8.3/10 2017
-Mario_Kart_8_Deluxe $59.99 9.3/10 2017
+Mario_Kart_8 $59.99 9.3/10 2017
 Hollow_Knight $14.99 9.4/10 2017
 Minecraft_Dungeons $29.99 7.0/10 2020
 Super_Mario_Party $39.99 7.3/10 2018
 Xenoblades_Chronicles_2 $59.99 8.0/10 2010
 Scott_Pilgrim_Vs._The_World $14.99 8.0/10 2010
+Just_Dance_2021 $29.99 7.0/10 2020
+Super_Mario_Deluxe $44.99 8.0/10 2019
+Sonic_Forces $14.99 6.0/10 2017
+Crash_Team_Racing $22.99 8.2/10 2019
+Yoshi's_Crafted_World $47.99 7.9/10 2019
+Bendy_and_the_Ink_Machine $39.99 9.0/10 2017
+Lego_Worlds $14.99 7.0/10 2017
+Hello_Neighbor $22.99 9.0/10 2017
+ARMS $49.99 8.6/10 2017
+Lego_Jurrasic_World $24.99 9.0/10 2015

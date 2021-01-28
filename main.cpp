@@ -26,7 +26,7 @@ struct Games
 int main()
 {
   // Game Array
-  Games library[30];
+  Games library[40];
 
   // Opens Input File
   ifstream read;
@@ -49,12 +49,14 @@ int main()
         read >> library[i].Year;
   }
 
-  // Outputs question for search
-  cout << "What game are you looking for? " << '\n';
-  cout << "Type END to stop program" << '\n';
+  // Outputs example and rule for search
+  cout << "EXAMPLE: Hyrule_Warriors_Age_of_Calamity" << '\n';
+  cout << "Type END to stop program" << "\n\n";
 
   // Enter the name for program to find and display information
+  cout << "What game would you like? ";
   cin >> nameGame;
+  cout << '\n';
 
   // Sentinel loop where you type END to stop program 
   while (nameGame != "END")
@@ -68,10 +70,10 @@ int main()
         index = i;
 
         // Outputs information
-        cout << left << setw(18) <<  "Title: " << right << setw(18) << library[index].Title 
-             << left << setw(18) <<"\nPrice: " << right << setw(20) <<library[index].Price 
-             << left << setw(18) <<"\nRating:  " << right << setw(20) <<library[index].Rating 
-             << left << setw(18) <<"\nRelease Date:  " << right << setw(18) <<library[index].Year;
+        cout << left << setw(17) <<  "Title: " << library[index].Title 
+             << left << setw(18) <<"\nPrice: " <<library[index].Price 
+             << left << setw(18) <<"\nRating:  " <<library[index].Rating 
+             << left << setw(18) <<"\nRelease Date:  " <<library[index].Year;
         
         // Makes spaces for multiple searches
         string NEW;
