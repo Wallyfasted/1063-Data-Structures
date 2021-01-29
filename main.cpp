@@ -50,8 +50,10 @@ int main()
         read >> library[i].Year;
   }
 
+  // While loop for switch statement to keep running
   while (selection != 4)
   {
+    // output statements for selections 
     cout << "Please input number for what selection you would like" << '\n';
     cout << "1. Instructions" << '\n';
     cout << "2. Example" << '\n';
@@ -59,9 +61,11 @@ int main()
     cout << "Selction: ";
     cin >> selection;
     cout << '\n';
+
     // switch statment for multiple selections
     switch (selection)
     {
+      // Case 1 for INSTRUCTIONS on what to do
       case '1':
         cout << "INSTRUCTIONS" << '\n';
         cout << "Use _ as spaces when looking up games" << '\n';
@@ -71,6 +75,7 @@ int main()
         cout << "----------------------------------------------------------------" << '\n';
         break;
       
+      // Case 2 for an EXAMPLE of how to write the game names
       case '2':
         cout << "EXAMPLE" << '\n';
         cout << "Please write the name of the game like this: " << '\n';
@@ -78,8 +83,8 @@ int main()
         cout << "----------------------------------------------------------------" << '\n';
         break;
 
+      // Case 3 starts the search engine 
       case '3':
-        // Enter the name for program to find and display information
       cout << "What game would you like? ";
       cin >> nameGame;
       cout << '\n';
@@ -101,11 +106,13 @@ int main()
                 << left << setw(18) <<"\nRating:  " <<library[index].Rating 
                 << left << setw(18) <<"\nRelease Date:  " <<library[index].Year;
             
+            
             // Makes spaces for multiple searches
             string NEW;
             cout << "\n\n" << "Type NEW for the new search" << '\n';
             cin >> NEW;
             cout << string(75, '\n');
+            
             // Repeats question for new search
             cout << "\n" << "What game are you looking for?" << '\n';
             cout << "Type END to stop program" << '\n';
@@ -115,6 +122,7 @@ int main()
       }
       // Program ending statement
       cout << "Thank you, have a nice day :)";
+      
       //Closes if you type END
       read.close();
       return(0);
