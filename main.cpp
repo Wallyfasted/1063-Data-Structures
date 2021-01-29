@@ -68,10 +68,10 @@ int main()
       // Case 1 for INSTRUCTIONS on what to do
       case '1':
         cout << "INSTRUCTIONS" << '\n';
-        cout << "Use _ as spaces when looking up games" << '\n';
-        cout << "Make sure to use capital letters where they are needed" << '\n';
-        cout << "At the end of search type NEW or new for a new search" << '\n';
-        cout << "If you want to stop the program just type END to stop program" << '\n';
+        cout << ">Use _ as spaces when looking up games" << '\n';
+        cout << ">Make sure to use capital letters where they are needed" << '\n';
+        cout << ">At the end of search type NEW or new for a new search" << '\n';
+        cout << ">If you want to stop the program just type END to stop program" << '\n';
         cout << "----------------------------------------------------------------" << '\n';
         break;
       
