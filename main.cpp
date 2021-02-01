@@ -38,7 +38,7 @@ int main()
   // Reads number of games in input file
   read >> numGames;
   
-    // Game Array
+    // Game Array- Dynamically sized
   Games* library= new Games[numGames];
 
 
@@ -92,7 +92,7 @@ int main()
 
   // closes input file and returns
   read.close();
-  delete[] library;
+  delete[] library; // closing the array to stop mem leak
   return(0);
 }
 
