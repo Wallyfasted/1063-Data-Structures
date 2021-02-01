@@ -38,7 +38,7 @@ int main()
   // Reads number of games in input file
   read >> numGames;
 
-    // Game Array- Dynamically size
+  // Game Array- Dynamically size
   Games* library= new Games[numGames];
 
   // Reads entire input file
@@ -51,14 +51,15 @@ int main()
   }
 
   // While loop for switch statement to keep running
-  while (selection != 4)
+  while (selection != '4' && nameGame != "END")
   {
     // output statements for selections 
     cout << "Please input number for what selection you would like" << '\n';
     cout << "1. Instructions" << '\n';
     cout << "2. Example" << '\n';
     cout << "3. Search Engine" << '\n';
-    cout << "Selction: ";
+    cout << "4. Stop Program" << '\n';
+    cout << "Selection: ";
     cin >> selection;
     cout << '\n';
 
@@ -71,7 +72,8 @@ int main()
         cout << ">Use _ as spaces when looking up games" << '\n';
         cout << ">Make sure to use capital letters where they are needed" << '\n';
         cout << ">At the end of search type NEW or new for a new search" << '\n';
-        cout << ">If you want to stop the program just type END to stop program" << '\n';
+        cout << ">If you want to stop the program while in search engine type" << '\n';
+        cout << " END to stop" << '\n';
         cout << "----------------------------------------------------------------" << '\n';
         break;
       
@@ -122,10 +124,6 @@ int main()
       }
       // Program ending statement
       cout << "Thank you, have a nice day :)";
-      
-      //Closes if you type END
-      read.close();
-      return(0);
     }
 
   }
