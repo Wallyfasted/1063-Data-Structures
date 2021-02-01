@@ -25,8 +25,6 @@ struct Games
 
 int main()
 {
-  // Game Array
-  Games library[30];
 
   // Opens Input File
   ifstream read;
@@ -39,6 +37,10 @@ int main()
   
   // Reads number of games in input file
   read >> numGames;
+  
+    // Game Array
+  Games* library= new Games[numGames];
+
 
   // Reads entire input file
   for (int i= 0; i < numGames; i++)
@@ -90,6 +92,7 @@ int main()
 
   // closes input file and returns
   read.close();
+  delete[] library;
   return(0);
 }
 
